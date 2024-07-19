@@ -1,0 +1,23 @@
+{
+  "name": "talk-to-me",
+  "version": "1.0.0",
+  "description": "one on one and group chat application",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js"
+  },
+  "author": "Rakesh Seervi",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.2",
+    "nodemon": "^3.0.3",
+    "socket.io": "^4.7.5"
+  }
+}
