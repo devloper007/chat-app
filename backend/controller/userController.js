@@ -4,7 +4,7 @@ import generateToken from "../config/generateToken.js";
 import { successHandler, errorHandler } from "../util/handler.js";
 
 export const userRegister = asyncHandler(async (req, res) => {
-  //   console.log("register data", req);
+    console.log("register data", req);
   const { name, email, password, pic } = req.body;
   try {
     if (!name || !email || !password)
@@ -53,7 +53,7 @@ export const login = asyncHandler(async (req, res) => {
         token: await generateToken(user._id),
       });
     }
-    return res.json({
+    return res.status(404).json({
       status: "failed",
       message: "resource not found/incorrect password",
     });
